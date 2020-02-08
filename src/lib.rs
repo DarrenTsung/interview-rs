@@ -5,4 +5,5 @@ pub mod inflight_entertainment;
 pub mod merge_lists;
 pub mod merging_meetings;
 pub mod permutation_palindrome;
+pub mod product_of_all_other_numbers;
 pub mod reverse_words;
