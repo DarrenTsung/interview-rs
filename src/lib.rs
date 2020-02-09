@@ -1,5 +1,6 @@
 pub mod apple_stocks;
 pub mod cafe_orders;
+pub mod find_duplicate_space;
 pub mod find_rotation_point;
 pub mod highest_product_of_three;
 pub mod inflight_entertainment;
