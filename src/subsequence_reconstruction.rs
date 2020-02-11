@@ -74,14 +74,35 @@ mod tests {
     #[test]
     fn works_on_missing_information() {
         let reconstruction = subsequence_reconstruction(&vec![vec![1, 3], vec![5, 3]]);
-        assert_eq!(reconstruction, vec![5, 1, 3]);
+        assert_eq!(reconstruction.len(), 3);
+        let index1 = reconstruction.iter().position(|&x| x == 1).expect("in");
+        let index3 = reconstruction.iter().position(|&x| x == 3).expect("in");
+        let index5 = reconstruction.iter().position(|&x| x == 5).expect("in");
+        assert!(index1 < index3);
+        assert!(index5 < index3);
     }
 
     #[test]
     fn works_on_more_complicated() {
         let reconstruction =
             subsequence_reconstruction(&vec![vec![5, 0], vec![5, 2, 3, 1], vec![4, 0], vec![4, 1]]);
-        assert_eq!(reconstruction, vec![5, 4, 2, 3, 1, 0]);
+        assert_eq!(reconstruction.len(), 6);
+        let index0 = reconstruction.iter().position(|&x| x == 0).expect("in");
+        let index1 = reconstruction.iter().position(|&x| x == 1).expect("in");
+        let index2 = reconstruction.iter().position(|&x| x == 2).expect("in");
+        let index3 = reconstruction.iter().position(|&x| x == 3).expect("in");
+        let index4 = reconstruction.iter().position(|&x| x == 4).expect("in");
+        let index5 = reconstruction.iter().position(|&x| x == 5).expect("in");
+        assert!(index5 < index0);
+        assert!(index5 < index2);
+        assert!(index5 < index3);
+        assert!(index5 < index1);
+
+        assert!(index2 < index3);
+        assert!(index2 < index1);
+
+        assert!(index4 < index0);
+        assert!(index4 < index1);
     }
 }
 
