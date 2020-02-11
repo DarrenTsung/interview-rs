@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 ego-tree = "0.6.2"
+ego-binary-tree = "0.1.0"
