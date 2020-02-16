@@ -26,14 +26,12 @@ pub fn subsequence_reconstruction(subsequences: &[Vec<u32>]) -> Vec<u32> {
         }
     }
 
-    dbg!(&directed_edges);
     // Traverse the directed edges and count number of nodes reachable.
     let mut nodes_reachable = HashMap::new();
     for (&id, _edges) in &directed_edges {
         populate_nodes_reachable(id, &directed_edges, &mut nodes_reachable);
     }
 
-    dbg!(&nodes_reachable);
     // Reconstruction is created by ordering the ids by the number of nodes reachable.
     let mut reconstruction = nodes_reachable.keys().cloned().collect::<Vec<_>>();
     reconstruction.sort_by_key(|id| nodes_reachable[id]);
