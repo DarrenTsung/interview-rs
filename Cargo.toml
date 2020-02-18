@@ -8,3 +8,6 @@ edition = "2018"
 ego-tree = "0.6.2"
 ego-binary-tree = "0.1.0"
 # ego-binary-tree = { path = "../ego-binary-tree" }
+
+[dev-dependencies]
+galvanic-assert = "0.8.7"

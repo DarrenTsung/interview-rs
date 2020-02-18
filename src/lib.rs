@@ -6,6 +6,7 @@ pub mod cafe_orders;
 pub mod find_duplicate_space;
 pub mod find_rotation_point;
 pub mod graph_coloring;
+pub mod graph_shortest_path;
 pub mod highest_product_of_three;
 pub mod inflight_entertainment;
 pub mod merge_lists;
