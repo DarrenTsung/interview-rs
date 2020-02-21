@@ -15,5 +15,6 @@ pub mod needle_in_haystack;
 pub mod permutation_palindrome;
 pub mod product_of_all_other_numbers;
 pub mod reverse_words;
+pub mod string_permutations;
 pub mod subsequence_reconstruction;
 pub mod tree_traversals;
