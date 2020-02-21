@@ -10,6 +10,7 @@ pub mod graph_coloring;
 pub mod graph_shortest_path;
 pub mod highest_product_of_three;
 pub mod inflight_entertainment;
+pub mod making_change;
 pub mod merge_lists;
 pub mod merging_meetings;
 pub mod needle_in_haystack;
