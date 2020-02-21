@@ -3,6 +3,7 @@ pub mod binary_tree_search;
 pub mod binary_tree_second_largest;
 pub mod binary_tree_superbalanced;
 pub mod cafe_orders;
+pub mod fib;
 pub mod find_duplicate_space;
 pub mod find_rotation_point;
 pub mod graph_coloring;
