@@ -17,6 +17,7 @@ pub mod merging_meetings;
 pub mod needle_in_haystack;
 pub mod permutation_palindrome;
 pub mod product_of_all_other_numbers;
+pub mod rectangular_love;
 pub mod reverse_words;
 pub mod string_permutations;
 pub mod subsequence_reconstruction;
