@@ -10,6 +10,7 @@ pub mod find_rotation_point;
 pub mod graph_coloring;
 pub mod graph_shortest_path;
 pub mod highest_product_of_three;
+pub mod highlight_search;
 pub mod inflight_entertainment;
 pub mod making_change;
 pub mod merge_lists;
