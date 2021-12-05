@@ -1,13 +1,13 @@
 [package]
-name = "interview-cake"
-version = "0.1.0"
 authors = ["Darren Tsung <darren@onesignal.com>"]
 edition = "2018"
+name = "interview-rs"
+version = "0.1.0"
 
 [dependencies]
-ego-tree = "0.6.2"
+binary-heap-plus = "0.4"
 ego-binary-tree = "0.1.0"
-# ego-binary-tree = { path = "../ego-binary-tree" }
+ego-tree = "0.6.2"
 
 [dev-dependencies]
 galvanic-assert = "0.8.7"
